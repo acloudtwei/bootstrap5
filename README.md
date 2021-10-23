@@ -4,34 +4,21 @@
 这是一个基于bootstrap5的响应式静态界面，目前已经基本可以自适应，但是还有一些不足，欢迎fork优化哦~
 
 #### 软件架构
-软件架构说明
+主要是使用了bootstrap5进行响应式开发，以及使用了jquery进行轮播图的图片切换以及请求第三方接口更换图片~
 
+ **演示** 
+
+![演示1](https://images.gitee.com/uploads/images/2021/1023/113130_e622fe2d_7386951.jpeg "在这里输入图片标题")
+![输入图片说明](https://images.gitee.com/uploads/images/2021/1023/113143_68f459d9_7386951.jpeg "1634959348(1).jpg")
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+直接git一下，然后双击index.html即可！
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+基本实现了响应式，但是还有部分不足，需要继续优化，大家可以fork下，优化哦~
 
 #### 参与贡献
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
-
-
-#### 特技
-
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+由Acloudtwei独自开发！
