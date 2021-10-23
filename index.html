@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Acloudtwei vilivili</title>
+    <!--    icon-->
+    <link rel="shortcut icon"
+          href="https://cdn.jsdelivr.net/gh/Fuukei/Public_Repository@latest/vision/basic/favicon.ico">
+    <!--    jquery-->
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--    bootstrap5-->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/popper.js/2.9.3/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <script>
+        $(document).ready(function () {
+            setInterval(function gets() {
+                $.ajax({
+                    url: "https://tenapi.cn/acg/?return=json",
+                    dataType: 'json',
+                    type: "GET",
+                    async: true,
+                    success: function (data) {
+                        if (data.code === 200) {
+                            // alert(data.imgurl);
+                            $("#imgurl1").attr("src", function () {
+                                return data.imgurl;
+                            });
+                        }
+                    }
+                });
+                $.ajax({
+                    url: "https://api.vvhan.com/api/acgimg?type=json",
+                    dataType: 'json',
+                    type: "GET",
+                    async: true,
+                    success: function (data) {
+                        if (data.success === true) {
+                            // alert(data.imgurl);
+                            $("#imgurl2").attr("src", function () {
+                                return data.imgurl;
+                            });
+                        }
+                    }
+                });
+                $.ajax({
+                    url: "https://api.vvhan.com/api/acgimg?type=json",
+                    dataType: 'json',
+                    type: "GET",
+                    async: true,
+                    success: function (data) {
+                        if (data.success === true) {
+                            // alert(data.imgurl);
+                            $("#imgurl3").attr("src", function () {
+                                return data.imgurl;
+                            });
+                        }
+                    }
+                });
+            }, 3500);
+        });
+
+    </script>
+
+</head>
+<body>
+
+<div class="container-fluid">
+
+    <div class="container m-6">
+        <div class="row"
+             style="background: linear-gradient(to bottom, #f7f0ac, #acf7f0, #f0acf7);border-radius: 3px; opacity:0.8;text-align:center;">
+            <div class="col-md-2">
+                <a href="" class="btn btn-outline-danger top" style="font-size:12px;"
+                   data-bs-toggle="tooltip" data-bs-placement="right" title="关注了vilivili了嘛？">主站</a>
+            </div>
+            <div class="col-md-2">
+                <a href="" class="btn top" style="font-size:12px;" data-bs-toggle="popover" title="二刺螈"
+                        data-bs-content="喜欢二刺螈嘛？">二刺螈图
+                </a>
+            </div>
+            <div class=" col-md-2">
+                <a href="" class="btn top" style="font-size:12px;" data-bs-toggle="tooltip" data-bs-placement="right"
+                   title="快来充大会员!">大会员</a>
+            </div>
+            <div class="col-md-2">
+                <a href="" class="btn top" style="font-size:12px;" data-bs-toggle="popover" title="二刺螈"
+                   data-bs-content="轮播慢慢看~？">轮播cute图</a>
+            </div>
+            <div class="col-md-2">
+                <a href="" class="btn top" style="font-size:12px;" data-bs-toggle="tooltip" data-bs-placement="right"
+                   title="联系方式在文末~">联系我们</a>
+            </div>
+            <div class="col-md-2">
+                <a href="" class="btn top" style="font-size:12px;" data-bs-toggle="popover" title="二刺螈"
+                   data-bs-content="有问题要及时反馈哈！">问题反馈</a>
+            </div>
+            <script>
+                var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+                var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                    return new bootstrap.Tooltip(tooltipTriggerEl)
+                })
+
+                var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+                var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                    return new bootstrap.Popover(popoverTriggerEl)
+                })
+            </script>
+        </div>
+    </div>
+
+    <div class="container-md p-4 mt-4">
+        <div class="nav_main">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    <!-- 轮播-->
+                    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                        </div>
+
+                        <!-- The slideshow/carousel -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://files.aiyunkj.com/view.php/e471a68eaab74d24d5be698393b91954.jpg"
+                                     class="d-block"
+                                     style="width:100%">
+                                <div class="carousel-caption">
+                                    <h3>首页</h3>
+                                    <p>这是一个二刺螈图片站！！！</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://files.aiyunkj.com/view.php/60c1189fb8015d30c782302648eb5154.jpg"
+                                     class="d-block"
+                                     style="width:100%">
+                                <div class="carousel-caption">
+                                    <h3>第二页</h3>
+                                    <p>啥都没有！！！</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://files.aiyunkj.com/view.php/060eaa0e35d1d2f96161c9d2ce93f9d4.jpg"
+                                     class="d-block"
+                                     style="width:100%">
+                                <div class="carousel-caption">
+                                    <h3>第三页</h3>
+                                    <p>再看也没有！！！</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls/icons -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <div class="container-md">
+        <div class="row" style="background: linear-gradient(to bottom, #acb6e5, #86fde8);
+                border-radius: 3px; opacity:0.8; text-align:center;">
+            <div class="col-md-2">
+                <a class="btn btn-outline-info" href="" onclick="alert('点击没惊喜~');">首页</a>
+            </div>
+            <div class="col-md-2">
+                <a class="btn btn-outline-info margin_top" href="" onclick="alert('再点也没有~');">动态</a>
+            </div>
+            <div class="col-md-2">
+                <a class="btn btn-outline-info margin_top" href="" onclick="alert('其实啥都没有~');">热门</a>
+            </div>
+            <div class="col-md-2">
+                <a class="btn btn-outline-info margin_top" href="" onclick="alert('别点了，没啥的~');">频道</a>
+            </div>
+            <div class="col-md-2">
+                <a class="btn btn-outline-info margin_top" href="" onclick="alert('都说别点了，你又不信~');">专栏</a>
+            </div>
+            <div class="col-md-2">
+                <a class="btn btn-outline-info margin_top" data-bs-toggle="tab" href=""
+                   onclick="alert('那就进小黑屋吧~');">小黑屋</a>
+            </div>
+        </div>
+    </div>
+
+    <!--    class="list-group-item list-group-item-primary"-->
+    <div class="container-md p-2 mt-2">
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="list-group small_center"
+                    style="text-align:center;border: 1px solid #3bc9db;">
+                    <li class="list-group-item list-group-item-primary" style="opacity:0.8;">
+                        <a class="btn btn-outline-info"
+                           data-bs-toggle="offcanvas"
+                           data-bs-target="#canvas" aria-controls="offcanvasWithBothOptions">点击looklook
+                        </a>
+                    </li>
+
+                    <li class="list-group-item list-group-item-primary" style="margin-top:2px;opacity:0.8;">
+                        <a class="btn btn-outline-info"
+                           data-bs-toggle="offcanvas"
+                           data-bs-target="#canvas" aria-controls="offcanvasWithBothOptions">点击looklook
+                        </a>
+                    </li>
+
+                    <li class="list-group-item list-group-item-primary" style="margin-top:2px;opacity:0.8;">
+                        <a class="btn btn-outline-info"
+                           data-bs-toggle="offcanvas"
+                           data-bs-target="#canvas" aria-controls="offcanvasWithBothOptions">点击looklook
+                        </a>
+                    </li>
+
+                    <li class="list-group-item list-group-item-primary" style="margin-top:2px;opacity:0.8;">
+                        <a class="btn btn-outline-info"
+                           data-bs-toggle="offcanvas"
+                           data-bs-target="#canvas" aria-controls="offcanvasWithBothOptions">点击looklook
+                        </a>
+                    </li>
+
+                    <li class="list-group-item list-group-item-primary" style="margin-top:2px;opacity:0.8;">
+                        <a class="btn btn-outline-info"
+                           data-bs-toggle="offcanvas"
+                           data-bs-target="#canvas" aria-controls="offcanvasWithBothOptions">点击looklook
+                        </a>
+                    </li>
+
+                    <li class="list-group-item list-group-item-primary" style="margin-top:2px;opacity:0.8;">
+                        <a class="btn btn-outline-info"
+                           data-bs-toggle="offcanvas"
+                           data-bs-target="#canvas" aria-controls="offcanvasWithBothOptions">点击looklook
+                        </a>
+                    </li>
+
+                    <!-- 特别的弹出框-->
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="canvas"
+                         style="background: linear-gradient(to bottom, #77A1D3, #79CBCA, #E684AE);opacity:0.6;"
+                         aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h1 class="offcanvas-title">主题</h1>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+
+                            <h1>Acloudtwei vilivili</h1>
+                            <p>选择你喜欢二刺螈类型吧：</p>
+                            <p>There are <abbr title="Do you like it?">many</abbr> types of secondary elements.</p>
+
+                            <div class="dropdown mt-3 dropdown-menu-end" style="margin-top:10px;">
+                                <label>
+                                    <select class="btn btn-outline-primary dropdown-toggle"
+                                            data-bs-toggle="dropdown"
+                                            style="background: linear-gradient(to bottom, #f4c4f3, #fc67fa);opacity:0.7">
+                                        <option class="dropdown-item" style="color:#faa2c1">软萌型</option>
+                                        <option class="dropdown-item" style="color:#faa2c1">傲娇型</option>
+                                        <option class="dropdown-item" style="color:#faa2c1">天然呆型</option>
+                                        <option class="dropdown-item" style="color:#faa2c1">元气型</option>
+                                        <option class="dropdown-item" style="color:#faa2c1">蠢萌型</option>
+                                        <option class="dropdown-item" style="color:#faa2c1">病娇型</option>
+                                        <option class="dropdown-item" style="color:#faa2c1">腹黑型</option>
+                                    </select>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="col-md-10">
+                <!--   小轮播-->
+                <!--   轮播设置-->
+                <div id="demo1" class="carousel slide" data-bs-ride="carousel">
+
+                    <!--轮播图片下面的小点点点-->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo1" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <!-- 轮播图片的描述 -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://tva1.sinaimg.cn/large/9bd9b167gy1g4c8t7tfa7j21hc0u01kx.jpg"
+                                 class="d-block test2"
+                                 id="imgurl1"
+                                 style="width:100%">
+                            <div class="carousel-caption">
+                                <h3>每日一句情话</h3>
+                                <script type="text/javascript" src="https://api.vvhan.com/api/love?type=js">
+                                </script>
+                                <script>ishan()</script>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="" class="d-block test2"
+                                 id="imgurl2"
+                                 style="width:100%">
+                            <div class="carousel-caption">
+                                <h3>每日一鸡汤</h3>
+                                <script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js">
+                                </script>
+                                <script>ishan()</script>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="" class="d-block test2"
+                                 id="imgurl3"
+                                 style="width:100%">
+                            <div class="carousel-caption">
+                                <h3>每日一鸡汤</h3>
+                                <script type="text/javascript" src="https://api.vvhan.com/api/ian?type=js"></script>
+                                <script>ishan()</script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--                    轮播按钮-->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#demo1"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#demo1"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-md">
+
+    <div class="row">
+        <div class="col-md-12">
+            <p style="display:flex;justify-content:center;align-items:center;"
+               class="test1">
+                <script type="text/javascript" src="https://api.vvhan.com/api/love?type=js">
+                </script>
+                <script>ishan()</script>
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="container-md">
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card"
+                 style="background: linear-gradient(to bottom, #77A1D3, #79CBCA, #E684AE);opacity:0.8;width:100%;height:400px;">
+                <!--                先暂时不用图片-->
+                <!--                <img class="card-img-top" src="./images/banner2.jpg" alt="Card image"-->
+                <!--                     style="background: linear-gradient(to bottom, #77A1D3, #79CBCA, #E684AE);opacity:0.6;width:100%;height:100%;"/>-->
+                <div class="card-img-overlay">
+                    <h4 class="card-title" style="text-align: center;">
+                        <div class="spinner-grow pinner-grow-sm text-info"></div>
+                        二刺螈预约
+                    </h4>
+                    <hr>
+                    <div style="margin:auto;">
+                        <span style="color:#f06595;font-size:18px;">手机号：</span><label>
+                        <input type="text" placeholder="Your number" class="inputs">
+                    </label>
+                    </div>
+
+                    <div style="margin:auto;">
+                        <span style="color:#f06595;font-size:18px;">预约张数：</span><label>
+                        <div class="dropdown dropdown-menu-end" style="margin-top:10px;">
+                            <select class="btn btn-outline-primary dropdown-toggle"
+                                    data-bs-toggle="dropdown" name="PlanDays" id="PlanDays"
+                                    style="background: linear-gradient(to bottom, #f4c4f3, #fc67fa);opacity:0.7">
+                                <option class="dropdown-item" style="color:#faa2c1">一张</option>
+                                <option class="dropdown-item" style="color:#faa2c1">四张</option>
+                                <option class="dropdown-item" style="color:#faa2c1">八张</option>
+                                <option class="dropdown-item" style="color:#faa2c1">十六张</option>
+                                <option class="dropdown-item" style="color:#faa2c1">三十二张</option>
+                                <option class="dropdown-item" style="color:#faa2c1">六四张</option>
+                                <option class="dropdown-item" style="color:#faa2c1">无限张</option>
+                            </select>
+                        </div>
+                    </label>
+                    </div>
+
+                    <div style="margin-top:5px;">
+                        <span style="color:#f06595;font-size:18px;">空闲日期：</span><label>
+                        <input name="StartDate" type="date" value="2021-10-20"
+                               style="color:#228be6;background: linear-gradient(to bottom, #f4c4f3, #fc67fa);opacity:0.6">
+                    </label>
+                    </div>
+
+                    <div style="margin-top:5px;">
+                        <span style="color:#f06595;font-size:18px;">忙碌日期：</span><label>
+                        <input name="StartDate" type="date" value="2021-10-22"
+                               style="color:#228be6;background: linear-gradient(to bottom, #f4c4f3, #fc67fa);opacity:0.6">
+                    </label>
+                    </div>
+
+
+                    <a class="btn btn-outline-primary "
+                       style="display:flex;justify-content:center;align-items:center;opacity:0.6;margin-top: 10px;"
+                       onClick="alert('预约成功！');">
+                        <span class="spinner-border spinner-border-sm"></span>
+                        点击起飞..
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 margin_top">
+            <div class="card"
+                 style="background: linear-gradient(to bottom, #77A1D3, #79CBCA, #E684AE);opacity:0.8;width:100%;height:400px;">
+                <script>
+                    function setTab(name, cursel, n) {
+                        for (i = 1; i <= n; i++) {
+                            var con = document.getElementById("con_" + name + "_" + i);
+                            con.style.display = i === cursel ? "block" : "none";
+                        }
+                    }
+                </script>
+                <!--                先暂时不用图片-->
+                <!--                <img class="card-img-top" src="./images/banner2.jpg" alt="Card image"-->
+                <!--                     style="background: linear-gradient(to bottom, #77A1D3, #79CBCA, #E684AE);opacity:0.6;width:100%;height:100%;"/>-->
+                <div class="card-img-overlay">
+                    <h4 class="card-title" style="text-align: center;">
+                        <div class="spinner-grow pinner-grow-sm text-info"></div>
+                        最新活动
+                    </h4>
+                    <hr>
+
+                    <div class="btn-group" style="display:flex; justify-content:center; align-items: center;">
+                        <button type="button" id="menu1" class="btn btn-info" onMouseOver="setTab('menu',1,2)"
+                                style="opacity:0.6;">
+                            大会员活动
+                        </button>
+                        <button type="button" id="menu2" class="btn btn-info" onMouseOver="setTab('menu',2,2)"
+                                style="margin-left:10px;opacity:0.6;">
+                            二刺螈上线活动
+                        </button>
+                    </div>
+
+                    <ul class="list-group" id="con_menu_1" style="margin-top:10px;">
+                        <a href="#" class="list-group-item list-group-item-action tops"
+                           style="background: linear-gradient(to bottom, #f4c4f3, #fc67fa);opacity:0.6;">大会员的功能新上线，只需9.9就能包月哦~</a>
+                        <a href="#" class="list-group-item list-group-item-action tops"
+                           style="background: linear-gradient(to bottom, #f4c4f3, #fc67fa);opacity:0.6;margin-top:3px;">开年费大会员，更省钱~</a>
+                        <a href="#" class="list-group-item list-group-item-action tops"
+                           style="background: linear-gradient(to bottom, #f4c4f3, #fc67fa);opacity:0.6;margin-top:3px;">大会员最高等级已经v9，还不来一键升级？</a>
+                    </ul>
+
+                    <ul class="list-group" id="con_menu_2" style="margin-top:10px;display:none;">
+                        <a href="#" class="list-group-item list-group-item-action tops"
+                           style="background: linear-gradient(to bottom, #f4c4f3, #fc67fa);opacity:0.6;">即将上线新类型二刺螈，尽情期待~</a>
+                        <a href="#" class="list-group-item list-group-item-action tops"
+                           style="background: linear-gradient(to bottom, #f4c4f3, #fc67fa);opacity:0.6;margin-top:3px;">近日官方将有问卷活动~</a>
+                        <a href="#" class="list-group-item list-group-item-action tops"
+                           style="background: linear-gradient(to bottom, #f4c4f3, #fc67fa);opacity:0.6;margin-top:3px;">将调整腹黑型二刺螈~</a>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 margin_top">
+            <div class="card"
+                 style="background: linear-gradient(to bottom, #77A1D3, #79CBCA, #E684AE);opacity:0.8;width:100%;height:400px;">
+                <!--                先暂时不用图片-->
+                <!--                <img class="card-img-top" src="./images/banner2.jpg" alt="Card image"-->
+                <!--                     style="background: linear-gradient(to bottom, #77A1D3, #79CBCA, #E684AE);opacity:0.6;width:100%;height:100%;"/>-->
+                <div class="card-img-overlay">
+                    <h4 class="card-title" style="text-align: center;">
+                        <div class="spinner-grow pinner-grow-sm text-info"></div>
+                        联系方式
+                    </h4>
+                    <hr>
+
+                    <div class="btn-group" style="display:flex; justify-content:center; align-items: center;">
+                        <button type="button" class="btn btn-info"
+                                style="opacity:0.6;">
+                            QQ咨询
+                        </button>
+                        <button type="button" class="btn btn-warning"
+                                style="margin-left:10px;opacity:0.6;">
+                            在线咨询
+                        </button>
+                    </div>
+
+                    <div style="margin:10px;text-align: center;">
+                        <strong style="color:#339af0;font-size:18px;">电话咨询</strong><label>
+                    </label>
+                    </div>
+                    <p style="font-size:16px;color:#f06595;">办公室：<span>123456789</span></p>
+                    <hr>
+
+                    <div style="margin:10px;text-align: center;">
+                        <strong style="color:#339af0;font-size:18px;">电话咨询</strong><label>
+                    </label></div>
+                    <p style="font-size:16px;color:#f06595;">手机：<span>123456789</span></p>
+                    <hr>
+
+                    <div style="margin:10px;text-align: center;">
+                        <strong style="color:#339af0;font-size:18px;">QQ咨询</strong><label>
+                    </label></div>
+                    <p style="font-size:16px;color:#e64980;">QQ：<span>123456</span></p>
+                    <hr>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--这个是最后的-->
+</div>
+
+</body>
+</html>
