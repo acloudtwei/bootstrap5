@@ -1,0 +1,134 @@
+/*全局设置*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*html设置*/
+html {
+    height: 100%;
+}
+
+body {
+    background: url(../images/banner2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url("../css/fonts/迷你简行书.TTF")
+}
+
+@font-face {
+    font-family: myFonts;
+    src: url("../css/fonts/迷你简丫丫.ttf")
+}
+
+body {
+    cursor: url("../images/cursor_2.png"), default;
+}
+
+a:hover {
+    cursor: url("../images/cursor_1.png"), pointer;
+}
+
+button:hover {
+    cursor: url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/ayuda.cur"), pointer;
+}
+
+img:hover {
+    cursor: url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/No_Disponible.cur"), pointer;
+}
+
+p:hover {
+    cursor: url("https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/cursor/texto.cur"), pointer;
+}
+
+/* 导航条样式 */
+.nav_main {
+    text-align: left;
+    margin: 0 auto;
+}
+
+.top {
+    font-family: myFont, serif;
+}
+
+
+.top:hover {
+    color: #faa2c1;
+    font-family: myFonts, serif;
+}
+
+.tops {
+    font-family: myFont, serif;
+}
+
+
+.tops:hover {
+    color: #66d9e8;
+    font-family: myFonts, serif;
+}
+
+
+.inputs {
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+    padding-left: 20px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    font-size: 18px;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+}
+
+/*安卓部分自适应*/
+@media only screen and (max-width: 767px) {
+    .test1 {
+        color: #faa2c1;
+    }
+
+    #demo1 {
+        margin-top: 10px;
+    }
+
+    .margin_top {
+        margin-top: 10px;
+    }
+}
+
+/*第一部分自适应*/
+@media only screen and (min-width: 767px) and (max-width: 1200px) {
+    .test1 {
+        color: #3bc9db;
+    }
+
+    .test2 {
+        height: 482px;
+    }
+
+    .small_center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*第二部分自适应*/
+@media only screen and (min-width: 1200px) and (max-width: 1700px) {
+    .test1 {
+        color: #3bc9db;
+    }
+
+    .test2 {
+        height: 340px;
+    }
+}
+
+
+
