@@ -21,4 +21,4 @@
 
 #### 参与贡献
 
-由Acloudtwei独自开发！
+由Acloudtwei独自设计！
